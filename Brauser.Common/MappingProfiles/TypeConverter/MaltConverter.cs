@@ -1,5 +1,3 @@
-using System.Reflection;
-using System.Xml.Serialization;
 using AutoMapper;
 using Brauser.Common.Import;
 using Brauser.Common.Recipe;
@@ -20,6 +18,28 @@ public class MaltConverter : ITypeConverter<MaischeMalzUndMehrRecipe, List<Malt>
                 Name = source.Malz1,
                 Quantity = source.Malz1_Menge,
                 Unit = source.Malz1_Einheit
+            });
+        }
+
+        if (source.Malz2 is not null)
+        {
+            result.Add(new Malt
+            {
+                Order = 2,
+                Name = source.Malz2,
+                Quantity = source.Malz2_Menge,
+                Unit = source.Malz2_Einheit
+            });
+        }
+
+        if (source.Malz3 is not null)
+        {
+            result.Add(new Malt
+            {
+                Order = 3,
+                Name = source.Malz3,
+                Quantity = source.Malz3_Menge,
+                Unit = source.Malz3_Einheit
             });
         }
 
