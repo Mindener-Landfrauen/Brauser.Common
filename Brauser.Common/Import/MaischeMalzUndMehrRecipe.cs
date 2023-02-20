@@ -3,99 +3,56 @@ namespace Brauser.Common.Import;
 /// <summary>
 ///     Json export of a recipe from the german site <see cref="https://www.maischemalzundmehr.de/" />
 /// </summary>
-/// <param name="Name"></param>
-/// <param name="Datum"></param>
-/// <param name="Sorte"></param>
-/// <param name="Ausschlagswuerze"></param>
-/// <param name="Sudhausausbeute"></param>
-/// <param name="Stammwuerze"></param>
-/// <param name="Bittere"></param>
-/// <param name="Farbe"></param>
-/// <param name="Alkohol"></param>
-/// <param name="Kurzbeschreibung"></param>
-/// <param name="Infusion_Hauptguss"></param>
-/// <param name="Malz1"></param>
-/// <param name="Malz1_Menge"></param>
-/// <param name="Malz1_Einheit"></param>
-/// <param name="Malz2"></param>
-/// <param name="Malz2_Menge"></param>
-/// <param name="Malz2_Einheit"></param>
-/// <param name="Malz3"></param>
-/// <param name="Malz3_Menge"></param>
-/// <param name="Malz3_Einheit"></param>
-/// <param name="Maischform"></param>
-/// <param name="Infusion_Einmaischtemperatur"></param>
-/// <param name="Infusion_Rasttemperatur1"></param>
-/// <param name="Infusion_Rastzeit1"></param>
-/// <param name="Infusion_Rasttemperatur2"></param>
-/// <param name="Infusion_Rastzeit2"></param>
-/// <param name="Infusion_Rasttemperatur3"></param>
-/// <param name="Infusion_Rastzeit3"></param>
-/// <param name="Abmaischtemperatur"></param>
-/// <param name="Nachguss"></param>
-/// <param name="Kochzeit_Wuerze"></param>
-/// <param name="Hopfen_VWH_1_Sorte"></param>
-/// <param name="Hopfen_VWH_1_Menge"></param>
-/// <param name="Hopfen_VWH_1_alpha"></param>
-/// <param name="Hopfen_1_Sorte"></param>
-/// <param name="Hopfen_1_Menge"></param>
-/// <param name="Hopfen_1_alpha"></param>
-/// <param name="Hopfen_1_Kochzeit"></param>
-/// <param name="Hopfen_2_Sorte"></param>
-/// <param name="Hopfen_2_Menge"></param>
-/// <param name="Hopfen_2_alpha"></param>
-/// <param name="Hopfen_2_Kochzeit"></param>
-/// <param name="Hefe"></param>
-/// <param name="Gaertemperatur"></param>
-/// <param name="Endvergaerungsgrad"></param>
-/// <param name="Karbonisierung"></param>
-/// <param name="Anmerkung_Autor"></param>
-public record MaischeMalzUndMehrRecipe(
-    string Name,
-    string Datum,
-    string? Sorte = null,
-    int? Ausschlagswuerze = null,
-    int? Sudhausausbeute = null,
-    int? Stammwuerze = null,
-    int? Bittere = null,
-    string? Farbe = null,
-    double? Alkohol = null, // Check if double is correct
-    string? Kurzbeschreibung = null,
-    int? Infusion_Hauptguss = null,
-    string? Malz1 = null,
-    double? Malz1_Menge = null,
-    string? Malz1_Einheit = null,
-    string? Malz2 = null,
-    double? Malz2_Menge = null,
-    string? Malz2_Einheit = null,
-    string? Malz3 = null,
-    double? Malz3_Menge = null,
-    string? Malz3_Einheit = null,
-    string? Maischform = null,
-    double? Infusion_Einmaischtemperatur = null,
-    string? Infusion_Rasttemperatur1 = null,
-    string? Infusion_Rastzeit1 = null,
-    string? Infusion_Rasttemperatur2 = null,
-    string? Infusion_Rastzeit2 = null,
-    string? Infusion_Rasttemperatur3 = null,
-    string? Infusion_Rastzeit3 = null,
-    string? Abmaischtemperatur = null,
-    int? Nachguss = null,
-    string? Kochzeit_Wuerze = null,
-    string? Hopfen_VWH_1_Sorte = null,
-    int? Hopfen_VWH_1_Menge = null,
-    int? Hopfen_VWH_1_alpha = null,
-    string? Hopfen_1_Sorte = null,
-    int? Hopfen_1_Menge = null,
-    int? Hopfen_1_alpha = null,
-    string? Hopfen_1_Kochzeit = null,
-    string? Hopfen_2_Sorte = null,
-    int? Hopfen_2_Menge = null,
-    int? Hopfen_2_alpha = null,
-    string? Hopfen_2_Kochzeit = null,
-    string? Hefe = null,
-    string? Gaertemperatur = null,
-    string? Endvergaerungsgrad = null,
-    string? Karbonisierung = null,
-    string? Anmerkung_Autor = null
-);
+public record MaischeMalzUndMehrRecipe
+{
+    public string? Name { get; set; }
+    public string? Datum { get; set; }
+
+    public string? Sorte { get; set; }
+
+    public int? Ausschlagswuerze { get; set; }
+    public int? Sudhausausbeute { get; set; }
+
+    public int? Stammwuerze { get; set; }
+    public int? Bittere { get; set; }
+    public string? Farbe { get; set; }
+    public double? Alkohol { get; set; }
+    public string? Kurzbeschreibung { get; set; }
+    public int? Infusion_Hauptguss { get; set; }
+    public string? Malz1 { get; set; }
+    public double? Malz1_Menge { get; set; }
+    public string? Malz1_Einheit { get; set; }
+    public string? Malz2 { get; set; }
+    public double? Malz2_Menge { get; set; }
+    public string? Malz2_Einheit { get; set; }
+    public string? Malz3 { get; set; }
+    public double? Malz3_Menge { get; set; }
+    public string? Malz3_Einheit { get; set; }
+    public string? Maischform { get; set; }
+    public double? Infusion_Einmaischtemperatur { get; set; }
+    public string? Infusion_Rasttemperatur1 { get; set; }
+    public string? Infusion_Rastzeit1 { get; set; }
+    public string? Infusion_Rasttemperatur2 { get; set; }
+    public string? Infusion_Rastzeit2 { get; set; }
+    public string? Infusion_Rasttemperatur3 { get; set; }
+    public string? Infusion_Rastzeit3 { get; set; }
+    public string? Abmaischtemperatur { get; set; }
+    public int? Nachguss { get; set; }
+    public string? Kochzeit_Wuerze { get; set; }
+    public string? Hopfen_VWH_1_Sorte { get; set; }
+    public int? Hopfen_VWH_1_Menge { get; set; }
+    public int? Hopfen_VWH_1_alpha { get; set; }
+    public string? Hopfen_1_Sorte { get; set; }
+    public int? Hopfen_1_Menge { get; set; }
+    public int? Hopfen_1_alpha { get; set; }
+    public string? Hopfen_1_Kochzeit { get; set; }
+    public string? Hopfen_2_Sorte { get; set; }
+    public int? Hopfen_2_Menge { get; set; }
+    public int? Hopfen_2_alpha { get; set; }
+    public string? Hopfen_2_Kochzeit { get; set; }
+    public string? Hefe { get; set; }
+    public string? Gaertemperatur { get; set; }
+    public string? Endvergaerungsgrad { get; set; }
+    public string? Karbonisierung { get; set; }
+    public string? Anmerkung_Autor { get; set; }
+}
