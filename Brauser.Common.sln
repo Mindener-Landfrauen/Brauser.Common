@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brauser.Common", "Brauser.Common\Brauser.Common.csproj", "{F5A63782-CA10-4819-BAA6-CA5397C454AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brauser.Common.UnitTests", "Brauser.Common.UnitTests\Brauser.Common.UnitTests.csproj", "{4DFA02F3-5F4A-409B-BA46-18621B54CF06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{F5A63782-CA10-4819-BAA6-CA5397C454AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A63782-CA10-4819-BAA6-CA5397C454AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A63782-CA10-4819-BAA6-CA5397C454AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFA02F3-5F4A-409B-BA46-18621B54CF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFA02F3-5F4A-409B-BA46-18621B54CF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFA02F3-5F4A-409B-BA46-18621B54CF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFA02F3-5F4A-409B-BA46-18621B54CF06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
