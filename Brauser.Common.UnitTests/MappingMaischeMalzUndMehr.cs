@@ -17,39 +17,52 @@ public class MappingMaischeMalzUndMehr
         {
             Name = "name",
             alcohol = "1,1",
-            Hops = new List<Hop>
+            Malts = new List<Malt>
             {
-                new Hop
+                new Malt
                 {
                     Order = 1,
-                    Variety = "variety",
-                    Quantity = 20.0,
-                    Alpha = 3,
-                    CookingTime = now
-                },
-                new Hop
-                {
-                    Order = 2,
-                    Variety = "variety2",
-                    Quantity = 20.0,
-                    Alpha = 3,
-                    CookingTime = now
+                    Quantity = 2.0,
+                    Name = "Malti",
+                    Unit = "kg"
                 }
-            }
+            },
+            // Hops = new List<Hop>
+            // {
+            //     new Hop
+            //     {
+            //         Order = 1,
+            //         Variety = "variety",
+            //         Quantity = 20.0,
+            //         Alpha = 3,
+            //         CookingTime = now
+            //     },
+            //     new Hop
+            //     {
+            //         Order = 2,
+            //         Variety = "variety2",
+            //         Quantity = 20.0,
+            //         Alpha = 3,
+            //         CookingTime = now
+                // }
+            // }
         };
 
         var input = new MaischeMalzUndMehrRecipe
         {
             Name = "name",
             Alkohol = 1.1,
-            Hopfen_1_alpha = 3,
-            Hopfen_1_Sorte = "variety",
-            Hopfen_1_Kochzeit = now.ToString(),
-            Hopfen_1_Menge = 20,
-            Hopfen_2_Sorte = "variety2",
-            Hopfen_2_Menge = 20,
-            Hopfen_2_alpha = 3,
-            Hopfen_2_Kochzeit = now.ToString()
+            Malz1 = "Malti",
+            Malz1_Menge = 2.0,
+            Malz1_Einheit = "kg"
+            // Hopfen_1_alpha = 3,
+            // Hopfen_1_Sorte = "variety",
+            // Hopfen_1_Kochzeit = now.ToString(),
+            // Hopfen_1_Menge = 20,
+            // Hopfen_2_Sorte = "variety2",
+            // Hopfen_2_Menge = 20,
+            // Hopfen_2_alpha = 3,
+            // Hopfen_2_Kochzeit = now.ToString()
         };
 
         var mapperConfiguration = new MapperConfiguration(cfg => cfg.AddProfile(new MMMProfile()));

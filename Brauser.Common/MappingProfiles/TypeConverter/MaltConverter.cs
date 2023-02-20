@@ -17,7 +17,8 @@ public class MaltConverter : ITypeConverter<MaischeMalzUndMehrRecipe, List<Malt>
                 Order = 1,
                 Name = source.Malz1,
                 Quantity = source.Malz1_Menge,
-                Unit = source.Malz1_Einheit
+                Unit = source.Malz1_Einheit,
+                
             });
         }
 
