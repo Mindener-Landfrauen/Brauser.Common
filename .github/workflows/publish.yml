@@ -1,0 +1,29 @@
+# publish.yml
+name: Publish NuGet Package on Push to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "7.0"
+
+      - name: Build, Test, and Publish NuGet
+        uses: wahinekai/actions-publish-nuget@v3.0.1
+        with:
+          version: 1.0.0-${{ steps.date.outputs.date }}
+          project-path: Brauser.Common/Brauser.Common.csproj
+          solution-path: Brauser.Common.sln
+          nuget-feed-url: https://nuget.pkg.github.com/Mindener-Landfrauen/index.json
+          nuget-feed-password: ${{ secrets.GITHUB_TOKEN }}
