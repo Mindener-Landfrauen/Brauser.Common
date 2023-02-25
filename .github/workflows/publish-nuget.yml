@@ -28,6 +28,6 @@ jobs:
       run: dotnet pack --configuration Release --version-suffix "preview${{ github.run_id }}"
       
     - name: Publish nuget
-      run: dotnet nuget push Brauser.Common/bin/Release/Brauser.Common.1.0.0-prefiew${{ github.run_id }} --api-key ${{ secrets.GITHUB_TOKEN }}
+      run: dotnet nuget push Brauser.Common/bin/Release/Brauser.Common.1.0.0-prefiew${{ github.run_id }} --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
 
 
