@@ -8,7 +8,7 @@ public record Recipe
 
     public int? BatchSize { get; set; } // Ausschlagwürze
     public int? BrewhouseYield { get; set; } // Sudhausausbeute
-    public int? OriginalGravity { get; set; } // Stammwürze
+    public double? OriginalGravity { get; set; } // Stammwürze
     public int? Bitterness { get; set; } // Bittere
 
     public string? Color { get; set; }
@@ -27,13 +27,16 @@ public record Recipe
 
     public int? SpargeWater { get; set; } // Nachguss
 
-    public string? WortBoilingTime { get; set; } // Kochzeitwürze
+    public int? WortBoilingTime { get; set; } // Kochzeitwürze
 
     public string? HopVWH_1_Variety { get; set; } // Sorte
     public double? HopVWH_1_Quantity { get; set; } // Menge
-    public int? HopVW_1_Alpha { get; set; }
+    public double? HopVW_1_Alpha { get; set; }
 
     public List<Hop>? Hops { get; set; }
+    
+    public List<StopfHopfen>? StopfHopfens { get; set; }
+    public List<AdditionalFermentationIngredient>? AdditionalFermentationIngredients { get; set; }
     public string? Yeast { get; set; }
     public double? FermentationTemperature { get; set; } // Gaertemperatur
     public string? FinalDegreeOfFermentation { get; set; } // Endvergaerungsgrad
