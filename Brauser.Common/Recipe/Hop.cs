@@ -6,5 +6,5 @@ public record Hop
     public string? Variety { get; set; }
     public double? Quantity { get; set; }
     public double? Alpha { get; set; }
-    public int? CookingTime { get; set; }
+    public TimeSpan? CookingTime { get; set; }
 }

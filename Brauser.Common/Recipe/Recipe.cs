@@ -27,7 +27,7 @@ public record Recipe
 
     public int? SpargeWater { get; set; } // Nachguss
 
-    public int? WortBoilingTime { get; set; } // Kochzeitwürze
+    public TimeSpan? WortBoilingTime { get; set; } // Kochzeitwürze
 
     public string? HopVWH_1_Variety { get; set; } // Sorte
     public double? HopVWH_1_Quantity { get; set; } // Menge
