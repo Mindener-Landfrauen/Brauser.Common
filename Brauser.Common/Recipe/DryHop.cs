@@ -1,7 +1,6 @@
 namespace Brauser.Common.Recipe;
 
-// TODO: Need the correct translation here.
-public class StopfHopfen
+public class DryHop
 {
     public string? Variety { get; set; }
     public string? Quantity { get; set; }
