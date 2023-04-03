@@ -35,7 +35,7 @@ public record Recipe
 
     public List<Hop>? Hops { get; set; }
     
-    public List<StopfHopfen>? StopfHopfens { get; set; }
+    public List<DryHop>? DryHops { get; set; } // StopfHopfen
     public List<AdditionalFermentationIngredient>? AdditionalFermentationIngredients { get; set; }
     public string? Yeast { get; set; }
     public double? FermentationTemperature { get; set; } // Gaertemperatur
