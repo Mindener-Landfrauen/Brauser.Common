@@ -38,7 +38,11 @@ public record Recipe
     public List<DryHop>? DryHops { get; set; } // StopfHopfen
     public List<AdditionalFermentationIngredient>? AdditionalFermentationIngredients { get; set; }
     public string? Yeast { get; set; }
-    public double? FermentationTemperature { get; set; } // Gaertemperatur
+    
+    // Gaertemperatur
+    public double? FermentationTemperatureMin { get; set; }
+    public double? FermentationTemperatureMax { get; set; }
+    
     public string? FinalDegreeOfFermentation { get; set; } // Endvergaerungsgrad
     public string? Carbonation { get; set; }
     public string? AuthorNotes { get; set; }
