@@ -10,4 +10,19 @@
     <PackageReference Include="AutoMapper" Version="12.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Brauser.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Brauser.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Brauser.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Brauser.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>
