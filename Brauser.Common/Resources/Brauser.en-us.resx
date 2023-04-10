@@ -1,0 +1,101 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="BatchSize" xml:space="preserve">
+        <value>Batch Size</value>
+    </data>
+    <data name="BrewhouseYield" xml:space="preserve">
+        <value>Brewhouse Yield</value>
+    </data>
+    <data name="OriginalGravity" xml:space="preserve">
+        <value>Original Gravity</value>
+    </data>
+    <data name="Bitterness" xml:space="preserve">
+        <value>Bitterness</value>
+    </data>
+    <data name="Color" xml:space="preserve">
+        <value>Color</value>
+    </data>
+    <data name="Type" xml:space="preserve">
+        <value>Type</value>
+    </data>
+    <data name="Variety" xml:space="preserve">
+        <value>Variety</value>
+    </data>
+    <data name="Carbonation" xml:space="preserve">
+        <value>Carbonation</value>
+    </data>
+    <data name="Date" xml:space="preserve">
+        <value>Date</value>
+    </data>
+    <data name="DryHop" xml:space="preserve">
+        <value>Dry Hop</value>
+    </data>
+    <data name="FermentationTemperature" xml:space="preserve">
+        <value>Fermentation Temperature</value>
+    </data>
+    <data name="MashWater" xml:space="preserve">
+        <value>Mash Water</value>
+    </data>
+    <data name="Name" xml:space="preserve">
+        <value>Name</value>
+    </data>
+    <data name="ShortDescription" xml:space="preserve">
+        <value>Short Description</value>
+    </data>
+    <data name="WortBoilingTime" xml:space="preserve">
+        <value>Wort Boiling Time</value>
+    </data>
+    <data name="SpargeWater" xml:space="preserve">
+        <value>Sparge Water</value>
+    </data>
+    <data name="MashoutTemperature" xml:space="preserve">
+        <value>Mashout Temperature</value>
+    </data>
+    <data name="Hop" xml:space="preserve">
+        <value>Hop</value>
+    </data>
+    <data name="Infusion" xml:space="preserve">
+        <value>Infusion</value>
+    </data>
+    <data name="Malt" xml:space="preserve">
+        <value>Malt</value>
+    </data>
+    <data name="MashingTemperature" xml:space="preserve">
+        <value>Mashing Temperature</value>
+    </data>
+    <data name="Alcohol" xml:space="preserve">
+        <value>Alcohol</value>
+    </data>
+    <data name="Yeast" xml:space="preserve">
+        <value>Yeast</value>
+    </data>
+    <data name="Quantity" xml:space="preserve">
+        <value>Quantity</value>
+    </data>
+    <data name="Alpha" xml:space="preserve">
+        <value>Alpha</value>
+    </data>
+    <data name="CookingTime" xml:space="preserve">
+        <value>Cooking Time</value>
+    </data>
+    <data name="Rest" xml:space="preserve">
+        <value>Rest</value>
+    </data>
+    <data name="RestTemperature" xml:space="preserve">
+        <value>Rest Temperature</value>
+    </data>
+    <data name="RestTime" xml:space="preserve">
+        <value>Rest Time</value>
+    </data>
+</root>
