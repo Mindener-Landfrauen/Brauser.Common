@@ -3,30 +3,8 @@ namespace Brauser.Common.Recipe;
 public record Recipe
 {
     public Guid Id { get; set; }
-    public string? Name { get; set; }
-    public DateTimeOffset? Date { get; set; }
-    public string? Type { get; set; }
-
-    /// <summary>
-    /// Ausschlagwürze
-    /// </summary>
-    public int? BatchSize { get; set; }
-    /// <summary>
-    /// Sudhausausbeute
-    /// </summary>
-    public int? BrewhouseYield { get; set; }
-    /// <summary>
-    /// Stammwürze
-    /// </summary>
-    public double? OriginalGravity { get; set; }
-    /// <summary>
-    /// Bittere
-    /// </summary>
-    public int? Bitterness { get; set; }
-
-    public string? Color { get; set; }
-    public double? Alcohol { get; set; }
-    public string? ShortDescription { get; set; }
+    
+    public GeneralInformation? GeneralInformation { get; set; }
 
     /// <summary>
     /// Hauptguss
@@ -86,5 +64,5 @@ public record Recipe
     public double? FermentationTemperatureMax { get; set; }
 
     public string? Carbonation { get; set; }
-    public string? AuthorNotes { get; set; }
+    
 }
