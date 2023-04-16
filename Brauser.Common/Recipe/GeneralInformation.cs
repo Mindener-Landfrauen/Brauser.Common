@@ -7,22 +7,22 @@ public class GeneralInformation
     public string? Type { get; set; }
 
     /// <summary>
-    /// Ausschlagwürze
+    ///     Ausschlagwürze
     /// </summary>
     public int? BatchSize { get; set; }
-    
+
     /// <summary>
-    /// Sudhausausbeute
+    ///     Sudhausausbeute
     /// </summary>
     public int? BrewhouseYield { get; set; }
-    
+
     /// <summary>
-    /// Stammwürze
+    ///     Stammwürze
     /// </summary>
     public double? OriginalGravity { get; set; }
-    
+
     /// <summary>
-    /// Bittere
+    ///     Bittere
     /// </summary>
     public int? Bitterness { get; set; }
 
