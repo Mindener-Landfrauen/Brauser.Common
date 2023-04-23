@@ -35,10 +35,7 @@ public class BrewingProcess
     ///     Hop VorderWuerzeHopfung
     /// </summary>
     /// TODO: Choose a nicer name for VWH
-    public string? HopVWH_1_Variety { get; set; } // Sorte
-
-    public double? HopVWH_1_Quantity { get; set; } // Menge
-    public double? HopVW_1_Alpha { get; set; }
+    public Hop? HopVWH { get; set; }
 
     public List<Hop>? Hops { get; set; }
 }
