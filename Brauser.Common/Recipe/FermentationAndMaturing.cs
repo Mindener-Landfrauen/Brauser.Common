@@ -11,9 +11,9 @@ public class FermentationAndMaturing
     public string? Yeast { get; set; }
 
     /// <summary>
-    ///     Endvergaerungsgrad
+    ///     Endvergaerungsgrad given in %
     /// </summary>
-    public string? FinalDegreeOfFermentation { get; set; }
+    public int? FinalDegreeOfFermentation { get; set; }
 
     /// <summary>
     ///     Gaertemperatur min
@@ -25,5 +25,8 @@ public class FermentationAndMaturing
     /// </summary>
     public double? FermentationTemperatureMax { get; set; }
 
-    public string? Carbonation { get; set; }
+    /// <summary>
+    /// Carbonation in g/l
+    /// </summary>
+    public double? Carbonation { get; set; }
 }
