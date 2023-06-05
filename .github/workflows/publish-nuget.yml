@@ -26,7 +26,10 @@ jobs:
       
     - name: Set version
       run: |
-        version=$(date +'%Y.%m.%d').$GITHUB_RUN_NUMBER
+        year=$(date +'%Y')
+        month=$(date +'%-m')
+        day=$(date +'%-d')
+        version="$year.$month.$day-$GITHUB_RUN_NUMBER"
         echo "VERSION=$version" >> $GITHUB_ENV
 
     - name: pack nuget
