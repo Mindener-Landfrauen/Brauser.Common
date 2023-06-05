@@ -23,11 +23,14 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
+      
+    - name: Set version
+      run: |
+        version=$(date +'%Y.%m.%d').$GITHUB_RUN_NUMBER
+        echo "VERSION=$version" >> $GITHUB_ENV
 
     - name: pack nuget
-      run: dotnet pack --configuration Release --version-suffix "preview${{ github.run_id }}"
+      run: dotnet pack --configuration Release
       
     - name: Publish nuget
-      run: dotnet nuget push Brauser.Common/bin/Release/Brauser.Common.1.0.0-preview${{ github.run_id }}.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
-
-
+      run: dotnet nuget push Brauser.Common/bin/Release/Brauser.Common.$VERSION.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
