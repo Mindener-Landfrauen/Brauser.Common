@@ -27,7 +27,7 @@ jobs:
     - name: Set version
       run: |
         dotnet tool install --global GitVersion.Tool --version 5.*
-        version="dotnet-gitversion -showvariable SemVer"
+        version=$(dotnet-gitversion -showvariable SemVer)
         echo "VERSION=$version" >> $GITHUB_ENV
 
     - name: pack nuget
