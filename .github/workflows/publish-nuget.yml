@@ -26,11 +26,8 @@ jobs:
       
     - name: Set version
       run: |
-        year=$(date +'%Y')
-        month=$(date +'%-m')
-        day=$(date +'%-d')
-        version="$year.$month.$day.$GITHUB_RUN_NUMBER"
-        echo "VERSION=$version" >> $GITHUB_ENV
+        dotnet tool install --global GitVersion.Tool --version 5.*
+        gitversion >> $GITHUB_ENV
 
     - name: pack nuget
       run: dotnet pack --configuration Release
